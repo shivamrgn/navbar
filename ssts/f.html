@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="f.css">
+    <title>Shivam | Responsive Website</title>
+
+   
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SHIVAM</div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 id="home">This is Home Page</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero error,
+            architecto tempora numquam repudiandae nisi eum perferendis.
+        </p>
+
+        <div class="grid-container">
+            <div class="card"><h2>CHOOSE ONE :</h2><p>Lorem ipsum dolor sit amet.</p></div>
+            <div class="card"><h2>CHOOSE ONE :</h2><p>Lorem ipsum dolor sit amet.</p></div>
+            <div class="card"><h2>CHOOSE ONE :</h2><p>Lorem ipsum dolor sit amet.</p></div>
+            <div class="card"><h2>CHOOSE ONE :</h2><p>Lorem ipsum dolor sit amet.</p></div>
+            <div class="card"><h2>CHOOSE ONE :</h2><p>Lorem ipsum dolor sit amet.</p></div>
+            <div class="card"><h2>CHOOSE ONE :</h2><p>Lorem ipsum dolor sit amet.</p></div>
+        </div>
+    </main>
+
+    <footer>Created by Shivam</footer>
+
+    <script>
+        function toggleMenu(){
+            const nav = document.querySelector(".nav-links");
+
+            nav.classList.toggle("active");
+
+            if(nav.classList.contains("active")){
+                nav.classList.add("thunder");
+                setTimeout(() => {
+                    nav.classList.remove("thunder");
+                }, 600);
+            }
+        }
+    </script>
+
+</body>
+</html>
